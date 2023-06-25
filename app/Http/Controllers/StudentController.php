@@ -264,7 +264,7 @@ class StudentController extends Controller
     // PDF
     public function pdf()
     {
-        // Get the student data
+        // Mengambil data Student
         $students = Student::all();
 
         // Load the HTML template
