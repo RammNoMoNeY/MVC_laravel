@@ -1,0 +1,169 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html, body
+{
+  scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  display: fixed;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #2e2c2c;
+}
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+  color: #fff;
+}
+
+.nav-item .a
+{
+  color: #fff;
+}
+
+.mask-custom {
+  position: relative;
+  height: 50px;
+  z-index: 1;
+  backdrop-filter: blur(5px);
+  background-color: #ffffffb1;
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+.card .card-header
+{
+    background-color: #dda92f;
+}
+
+a.title
+{
+  color: #fff;
+  text-align: center;
+  
+}
+
+.card-body
+{
+position: relative;
+}
+
+.thead, .td
+{
+    lighting-color: #50cb43;
+} 
+
+/* bubbles boba 
+*/
+.background
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.bubbles
+{
+  display: flex;
+  position: relative;
+}
+
+.bubbles span
+{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #3fc8cf;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #285f62,
+    0 0 50px #3fc8cf,
+    0 0 100px #3fc8cf;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+.bubbles span:nth-child(even)
+{
+    background: #e66904;
+    box-shadow: 0 0 0 10px #5e4369,
+    0 0 50px #5215de,
+    0 0 100px #e1cca9;
+}
+
+@keyframes animate
+{
+    0%
+    {
+    transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+    transform: translateY(-10vh) scale(1);
+    }
+}
+
+.content {
+  margin-bottom: 25px; /* atur nilai margin sesuaikan*/
+}
+
+#footer 
+{
+  bottom: 0;
+  position: relative;
+  bottom: left;
+  left: 0;
+  width: 100%;
+  line-height: 50px;
+  min-height: 100vh;
+}
+
+#container {
+  min-height: 100%;
+  position: fixed;
+}
+
+.video-container
+{
+  margin-top: 25px;
+}
+
+.copyright-container
+{
+  margin-top: 400px;
+}
+
+#header {
+  background:#ff0;
+  padding:10px;
+}
+#body {
+  padding: 5px;
+  padding-bottom:50px;
+}
